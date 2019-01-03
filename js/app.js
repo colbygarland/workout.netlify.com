@@ -13,7 +13,8 @@
     overlay: document.querySelector('.overlay'),
     workouts: document.querySelector('.workouts'),
     confetti: document.querySelector('#confetti'),
-    status: document.querySelector('.status')
+    status: document.querySelector('.status'),
+    reset: document.querySelector('#reset')
   };
 
   app.hamburger.addEventListener("click", function() {
@@ -140,6 +141,10 @@
 
   }).call(this);
 
+  app.reset.addEventListener("click", function(){
+    location.reload();
+  });
+
   app.workouts.addEventListener("click", function(){
 
     var checked = true;
@@ -156,6 +161,7 @@
     if (checked){
       app.confetti.classList.toggle('show');
       app.status.classList.toggle('complete');
+      app.reset.classList.toggle('active');
       app.drawConfetti();
     }
   });
