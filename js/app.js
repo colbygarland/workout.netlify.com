@@ -140,15 +140,19 @@
   }).call(this);
 
   app.workouts.addEventListener("click", function(){
-    if (
-      document.getElementById("checkbox_1").checked &&
-      document.getElementById("checkbox_2").checked &&
-      document.getElementById("checkbox_3").checked &&
-      document.getElementById("checkbox_4").checked &&
-      document.getElementById("checkbox_5").checked &&
-      document.getElementById("checkbox_6").checked &&
-      document.getElementById("checkbox_7").checked
-    ){
+
+    var checked = true;
+    var inputs = document.querySelectorAll("input[type='checkbox']");
+    for(var i = 0; i < inputs.length; i++) {
+      if (inputs[i].checked){
+        checked = true;
+      } else {
+        checked = false;
+        break;
+      }
+    }
+
+    if (checked){
       app.confetti.classList.toggle('show');
       app.drawConfetti();
     }
