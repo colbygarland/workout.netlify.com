@@ -155,8 +155,8 @@
 
     if (checked){
       app.confetti.classList.toggle('show');
-      app.drawConfetti();
       app.status.classList.toggle('complete');
+      app.drawConfetti();
     }
   });
 
