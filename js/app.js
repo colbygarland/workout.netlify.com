@@ -160,11 +160,38 @@
     }
   });
 
+  var d = new Date();
+  var n = d.getDay();
+  switch(n){
+    // Sunday
+    case 0:
+    // Monday
+    case 1:
+      document.getElementById('menu_1').classList.toggle('current_page_item');
+      break;
+    // Tuesday
+    case 2:
+    // Wednesday
+    case 3:
+    // Thursday
+    case 4:
+      document.getElementById('menu_2').classList.toggle('current_page_item');
+      break;
+    // Friday
+    case 5:
+    // Saturday
+    case 6:
+    default:
+      document.getElementById('menu_3').classList.toggle('current_page_item');
+      break;
+  }
+
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker
              .register('../service-worker.js')
              .then(function() { console.log('Service Worker Registered'); });
   }
+
 
 })();
