@@ -105,9 +105,16 @@
 
   <canvas id="confetti"></canvas>
 
+  <script src="js/upup.min.js"></script>
   <script src="js/confetti.js"></script>
   <script src="js/app.js" async></script>
 
+  <script>
+    UpUp.start({
+      'content-url': 'index.html',
+      'assets': ['css/main.css', 'js/app.js']
+    });
+  </script>
 
 </body>
 </html>
