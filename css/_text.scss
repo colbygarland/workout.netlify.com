@@ -72,24 +72,14 @@ h2 {
 
 h3 {
   font-family:$font-headers;
-  font-size:calc( 30px + 1.5vw );
+  font-weight:bold;
   position: relative;
-  display:inline-block;
-  &:after {
-    content:'';
-    background:$primary;
-    height:18px;
-    width:100%;
-    display:block;
-    position: relative;
-    z-index:-1;
-    bottom:20px;
-  }
+  margin-bottom:30px;
 }
 
 h5 {
   font-family:$font-headers;
-  font-size:calc( 20px + 0.5vw );
+  font-weight:bold;
   display:inline-block;
   &:after {
     content:'';
