@@ -12,7 +12,8 @@
     menu: document.querySelector('.menu'),
     overlay: document.querySelector('.overlay'),
     workouts: document.querySelector('.workouts'),
-    confetti: document.querySelector('#confetti')
+    confetti: document.querySelector('#confetti'),
+    status: document.querySelector('.status')
   };
 
   app.hamburger.addEventListener("click", function() {
@@ -155,6 +156,7 @@
     if (checked){
       app.confetti.classList.toggle('show');
       app.drawConfetti();
+      app.status.classList.toggle('complete');
     }
   });
 
