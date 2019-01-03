@@ -159,7 +159,7 @@
       app.drawConfetti();
     }
   });
-
+/*
   var d = new Date();
   var n = d.getDay();
   switch(n){
@@ -185,7 +185,7 @@
       document.getElementById('menu_3').classList.toggle('current_page_item');
       break;
   }
-
+*/
 
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker

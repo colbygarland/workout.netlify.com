@@ -28,6 +28,14 @@
 
   li {
 
+    span {
+      color:#696969;
+      display:inline-block;
+      padding-left:8px;
+      padding-top:40px;
+      padding-bottom:10px;
+    }
+
     a {
       color:$text-color;
       display:block;
