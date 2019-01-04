@@ -6,7 +6,7 @@
 
   position: relative;
   display: inline-block;
-  padding-left: 45px;
+  padding-left: 40px;
   transition:0.4s ease;
 
   &:before, &:after {
@@ -16,8 +16,8 @@
   }
 
   &:before {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     left: 0px;
     top: 0;
     transition: 0.4s ease;
@@ -25,13 +25,13 @@
   }
 
   &:after {
-    height: 10px;
-    width: 22px;
+    height: 8px;
+    width: 19px;
     border-left: 2px solid;
     border-bottom: 2px solid;
     transform: rotate(-45deg);
     left: 4px;
-    top: 8px;
+    top: 6px;
     transition:0.4s ease;
     opacity:0;
   }
