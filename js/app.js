@@ -143,30 +143,34 @@
 
   }).call(this);
 
-  app.reset.addEventListener("click", function(){
-    location.reload();
-  });
+  if ( app.reset ){
+    app.reset.addEventListener("click", function(){
+      location.reload();
+    });
+  }
 
-  app.workouts.addEventListener("click", function(){
+  if ( app.workouts ){
+    app.workouts.addEventListener("click", function(){
 
-    var checked = true;
-    var inputs = document.querySelectorAll("input[type='checkbox']");
-    for(var i = 0; i < inputs.length; i++) {
-      if (inputs[i].checked){
-        checked = true;
-      } else {
-        checked = false;
-        break;
+      var checked = true;
+      var inputs = document.querySelectorAll("input[type='checkbox']");
+      for(var i = 0; i < inputs.length; i++) {
+        if (inputs[i].checked){
+          checked = true;
+        } else {
+          checked = false;
+          break;
+        }
       }
-    }
 
-    if (checked){
-      app.confetti.classList.toggle('show');
-      app.status.classList.toggle('complete');
-      app.reset.classList.toggle('active');
-      app.drawConfetti();
-    }
-  });
+      if (checked){
+        app.confetti.classList.toggle('show');
+        app.status.classList.toggle('complete');
+        app.reset.classList.toggle('active');
+        app.drawConfetti();
+      }
+    });
+  }
 /*
   var d = new Date();
   var n = d.getDay();

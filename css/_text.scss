@@ -55,6 +55,7 @@ h1 {
   margin-bottom:0;
   margin-top:0;
   font-weight:bold;
+  font-size:24px;
 
   @include media-breakpoint-up(md){
     letter-spacing: 5px;
