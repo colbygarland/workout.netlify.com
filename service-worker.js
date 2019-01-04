@@ -3,6 +3,14 @@ var cacheName = 'workmeout';
 var filesToCache = [
   '/',
   '/index.html',
+  '/day-one.html',
+  '/day-two.html',
+  '/day-three.html',
+  '/arms.html',
+  '/back.html',
+  '/chest.html',
+  '/legs.html',
+  '/shoulders.html',
   '/js/app.js',
   '/css/main.css'
 ];
