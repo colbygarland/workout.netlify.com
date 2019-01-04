@@ -102,7 +102,7 @@ $hamburger-types: (
   }
 
   &.is-active {
-    left:205px;
+    //left:205px;
     &:hover {
       @if $hamburger-hover-use-filter == true {
         filter: $hamburger-active-hover-filter;
