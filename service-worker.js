@@ -12,7 +12,9 @@ var filesToCache = [
   '/legs.html',
   '/shoulders.html',
   '/js/app.js',
-  '/css/main.css'
+  '/css/main.css',
+  '/favicon-16x16.png',
+  '/favicon-32x32.png'
 ];
 
 self.addEventListener('install', function(e) {
