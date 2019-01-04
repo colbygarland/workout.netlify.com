@@ -2,19 +2,19 @@ var dataCacheName = 'workmeout-v1';
 var cacheName = 'workmeout';
 var filesToCache = [
   '/',
-  '/index.html',
-  '/day-one.html',
-  '/day-two.html',
-  '/day-three.html',
-  '/arms.html',
-  '/back.html',
-  '/chest.html',
-  '/legs.html',
-  '/shoulders.html',
-  '/js/app.js',
-  '/css/main.css',
-  '/favicon-16x16.png',
-  '/favicon-32x32.png'
+  'index.html',
+  'day-one.html',
+  'day-two.html',
+  'day-three.html',
+  'arms.html',
+  'back.html',
+  'chest.html',
+  'legs.html',
+  'shoulders.html',
+  'js/app.js',
+  'css/main.css',
+  'favicon-16x16.png',
+  'favicon-32x32.png'
 ];
 
 self.addEventListener('install', function(e) {
