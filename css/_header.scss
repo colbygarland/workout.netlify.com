@@ -8,7 +8,12 @@ header {
 
   h1 {
     margin-left:60px;
-    color:#111;
+    a {
+      color:#222;
+      &:hover, &:active, &:focus {
+        color:#fff;
+      }
+    }
   }
 
 }
