@@ -8,3 +8,8 @@ main {
   padding-top:50px;
   padding-bottom:50px;
 }
+
+.quote {
+  background:lighten($secondary, 5%);
+  padding:8px;
+}
