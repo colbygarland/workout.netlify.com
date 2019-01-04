@@ -35,7 +35,7 @@
 
       canvas = document.getElementById("confetti");
 
-      context = canvas.getContext("2d");
+      if ( canvas ) context = canvas.getContext("2d");
 
       window.w = 0;
 
